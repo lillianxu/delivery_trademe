@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Deliver fee</title>
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <script src="main.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h2>Estimate the deliver fee</h2>
+        <form onsubmit="return false" name="control">
+            <fieldset id="panel">
+                <legend><h3>Please input the pacel information</h3></legend>
+                <table id="tab">
+                    <tr>
+                       <td>
+                           Length:
+                       </td>
+                       <td >
+                           <input type="text" name="lengthx" placeholder="200">
+                       </td>
+                        <td >
+                           mm
+                       </td>
+                    </tr>
+                    <tr>
+                        <td >
+                            Breadth:
+                        </td>
+                        <td >
+                            <input type="text" name="breadth"  placeholder="300">
+                        </td>
+                        <td >
+                           mm
+                        </td>
+                    </tr>
+                    <tr>
+                        <td >
+                            Height:
+                        </td>
+                        <td >
+                            <input type="text" name="height"  placeholder="150">
+                        </td>
+                        <td >
+                           mm
+                       </td>
+                    </tr>
+                    <tr>
+                        <td >
+                            Weight:
+                        </td>
+                        <td >
+                            <input type="text" name="weight"  placeholder="1">
+                        </td>
+                        <td >
+                           kg
+                        </td>
+                    </tr>
+                    <tr>
+                        <th colspan="3">
+                            <input type="submit"  name="solute" id="submit" value="OK">
+                        </th> 
+                    </tr>
+                </table>
+            </fieldset>
+            <fieldset id="panelresult">
+                <legend><h3>Result</h3></legend>
+                <table>
+                    <tr>
+                        <td>BoxSize:</td>
+                        <td>
+                            <input type="text" disabled="disabled" name="box">
+                        </td>
+                        <td style="padding-left: 20px">Cost:</td>
+                        <td>
+                            <input type="text" disabled="disabled" name="cost">
+                        </td>
+                    </tr>
+                </table>
+            </fieldset>
+        </form>
+    </div>
+</body>
+</html>
